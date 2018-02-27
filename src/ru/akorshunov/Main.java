@@ -4,6 +4,8 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import ru.akorshunov.converters.CustomJsonConverter;
 
+import java.lang.reflect.Type;
+
 public class Main {
     public static void main(String[] args) {
         SchedulerStepParam param = new SchedulerStepParam("-1","1","CMD","Test");
@@ -29,6 +31,9 @@ public class Main {
         builder.registerTypeAdapter(SchedulerProcessParam.class,new CustomJsonConverter());
         Gson gson = builder.create();
         String json = gson.toJson(procParam);
+        SchedulerProcessParam processParamTest = gson.fromJson(json, SchedulerProcessParam.class);
+        System.out.println(json);
+        json = gson.toJson(procParam);
         System.out.println(json);
     }
 }

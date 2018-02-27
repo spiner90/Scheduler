@@ -9,7 +9,7 @@ public class SchedulerStepParam {
     private String type;
     private ArrayList<String> commands;
     private ArrayList<SchedulerStepParam> childSteps = new ArrayList<SchedulerStepParam>();
-    SchedulerStepParam(String id,String nextId,String type,String name){
+    public SchedulerStepParam(String id,String nextId,String type,String name){
         this.id = id;
         this.nextId = nextId;
         this.type = type;

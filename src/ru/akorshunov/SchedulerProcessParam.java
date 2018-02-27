@@ -10,6 +10,11 @@ public class SchedulerProcessParam {
         this.id=id;
         this.name=name;
     }
+    public SchedulerProcessParam(String id, String name,HashMap<String,SchedulerStepParam> stepParams){
+        this.id=id;
+        this.name=name;
+        this.stepParams=stepParams;
+    }
     public String getName() {
         return name;
     }
