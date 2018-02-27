@@ -1,6 +1,8 @@
 package ru.tsconsulting;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import ru.tsconsulting.converters.CustomJsonConverter;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,14 +19,16 @@ public class Main {
         param3.addCommand("/c");
         param3.addCommand("dir \"D:\\\"");
 
-        SchedulerProcessParam procParam = new SchedulerProcessParam();
+        SchedulerProcessParam procParam = new SchedulerProcessParam("130","LOAD_MAIN_RUS");
         procParam.addStepParam(param3);
         procParam.addStepParam(param);
         procParam.addStepParam(param2);
         SchedulerProcess proc = new SchedulerProcess(procParam);
         proc.start();
-        Gson gson = new Gson();
-        String json = gson.toJson(proc);
+        GsonBuilder builder = new GsonBuilder();
+        builder.registerTypeAdapter(SchedulerProcessParam.class,new CustomJsonConverter());
+        Gson gson = builder.create();
+        String json = gson.toJson(procParam);
         System.out.println(json);
     }
 }

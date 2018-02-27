@@ -7,6 +7,10 @@ public class SchedulerProcessParam {
     private String name;
     private String id;
     private HashMap<String,SchedulerStepParam> stepParams = new HashMap<String,SchedulerStepParam>();
+    public SchedulerProcessParam(String id, String name){
+        this.id=id;
+        this.name=name;
+    }
     public String getName() {
         return name;
     }

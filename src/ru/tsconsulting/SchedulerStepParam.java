@@ -8,7 +8,7 @@ public class SchedulerStepParam {
     private String name;
     private String type;
     private ArrayList<String> commands;
-    private ArrayList<SchedulerStepParam> childSteps;
+    private ArrayList<SchedulerStepParam> childSteps = new ArrayList<SchedulerStepParam>();
     SchedulerStepParam(String id,String nextId,String type,String name){
         this.id = id;
         this.nextId = nextId;
@@ -40,6 +40,9 @@ public class SchedulerStepParam {
     }
     public String getNextId(){
         return nextId;
+    }
+    public String getName(){
+        return name;
     }
     public ArrayList<String> getCommands(){
         return commands;
