@@ -1,6 +1,5 @@
-package ru.tsconsulting;
+package ru.akorshunov;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 
 public class SchedulerProcessParam {

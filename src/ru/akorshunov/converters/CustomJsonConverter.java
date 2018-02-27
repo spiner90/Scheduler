@@ -1,8 +1,8 @@
-package ru.tsconsulting.converters;
+package ru.akorshunov.converters;
 
 import com.google.gson.*;
-import ru.tsconsulting.SchedulerProcessParam;
-import ru.tsconsulting.SchedulerStepParam;
+import ru.akorshunov.SchedulerProcessParam;
+import ru.akorshunov.SchedulerStepParam;
 import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.Iterator;

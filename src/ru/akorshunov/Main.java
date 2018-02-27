@@ -1,8 +1,8 @@
-package ru.tsconsulting;
+package ru.akorshunov;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import ru.tsconsulting.converters.CustomJsonConverter;
+import ru.akorshunov.converters.CustomJsonConverter;
 
 public class Main {
     public static void main(String[] args) {

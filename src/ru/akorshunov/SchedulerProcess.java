@@ -1,6 +1,4 @@
-package ru.tsconsulting;
-
-import java.util.Iterator;
+package ru.akorshunov;
 
 public class SchedulerProcess extends Thread{
     SchedulerProcessParam param;

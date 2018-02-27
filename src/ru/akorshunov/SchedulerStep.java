@@ -1,4 +1,4 @@
-package ru.tsconsulting;
+package ru.akorshunov;
 
 import oracle.jdbc.pool.OracleDataSource;
 
