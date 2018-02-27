@@ -1,4 +1,4 @@
-package ru.akorshunov;
+package ru.akorshunov.params;
 
 import java.util.HashMap;
 

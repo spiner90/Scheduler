@@ -3,8 +3,8 @@ package ru.akorshunov;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import ru.akorshunov.converters.CustomJsonConverter;
-
-import java.lang.reflect.Type;
+import ru.akorshunov.params.SchedulerProcessParam;
+import ru.akorshunov.params.SchedulerStepParam;
 
 public class Main {
     public static void main(String[] args) {
