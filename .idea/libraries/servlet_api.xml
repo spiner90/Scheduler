@@ -1,7 +1,7 @@
 <component name="libraryTable">
-  <library name="ojdbc8">
+  <library name="servlet-api">
     <CLASSES>
-      <root url="jar://C:/Java/custom_libs/ojdbc8.jar!/" />
+      <root url="jar://C:/Java/apache-tomcat-9.0.5/lib/servlet-api.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

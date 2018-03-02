@@ -1,7 +1,7 @@
-package ru.akorshunov;
+package ru.akorshunov.scheduler;
 
-import ru.akorshunov.params.SchedulerProcessParam;
-import ru.akorshunov.params.SchedulerStepParam;
+import ru.akorshunov.scheduler.params.SchedulerProcessParam;
+import ru.akorshunov.scheduler.params.SchedulerStepParam;
 
 public class SchedulerProcess extends Thread{
     SchedulerProcessParam param;

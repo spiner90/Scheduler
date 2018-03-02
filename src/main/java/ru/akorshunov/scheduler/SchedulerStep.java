@@ -1,7 +1,7 @@
-package ru.akorshunov;
+package ru.akorshunov.scheduler;
 
 import oracle.jdbc.pool.OracleDataSource;
-import ru.akorshunov.params.SchedulerStepParam;
+import ru.akorshunov.scheduler.params.SchedulerStepParam;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package ru.akorshunov.params;
+package ru.akorshunov.scheduler.params;
 
 import java.util.ArrayList;
 

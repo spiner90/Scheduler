@@ -1,8 +1,8 @@
-package ru.akorshunov.converters;
+package ru.akorshunov.scheduler.converters;
 
 import com.google.gson.*;
-import ru.akorshunov.params.SchedulerProcessParam;
-import ru.akorshunov.params.SchedulerStepParam;
+import ru.akorshunov.scheduler.params.SchedulerProcessParam;
+import ru.akorshunov.scheduler.params.SchedulerStepParam;
 import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.Iterator;

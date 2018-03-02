@@ -1,0 +1,19 @@
+apply plugin: 'war'
+repositories {
+    mavenLocal()
+    jcenter()
+    mavenCentral()
+}
+war {
+    archiveName 'Scheduler.war'
+    webXml = file('src/WEB.xml')
+}
+configurations { providedCompile }
+dependencies {
+    providedCompile "javax.servlet:javax.servlet-api:3.+"
+    compile files('libs/ojdbc8.jar')
+    compile files('libs/gson-2.6.2.jar')
+}
+sourceSets.main.compileClasspath += configurations.providedCompile
+sourceSets.test.compileClasspath += configurations.providedCompile
+sourceSets.test.runtimeClasspath += configurations.providedCompile

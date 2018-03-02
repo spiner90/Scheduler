@@ -1,10 +1,10 @@
-package ru.akorshunov;
+package ru.akorshunov.scheduler;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import ru.akorshunov.converters.CustomJsonConverter;
-import ru.akorshunov.params.SchedulerProcessParam;
-import ru.akorshunov.params.SchedulerStepParam;
+import ru.akorshunov.scheduler.converters.CustomJsonConverter;
+import ru.akorshunov.scheduler.params.SchedulerProcessParam;
+import ru.akorshunov.scheduler.params.SchedulerStepParam;
 
 public class Main {
     public static void main(String[] args) {
